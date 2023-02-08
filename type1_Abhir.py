@@ -58,7 +58,7 @@ layout = dbc.Container([
         dcc.Graph(id='hist', style={'height': '30%', 'width': '33%', 'display': 'inline-block','background':'black'}),
     ],style={'background': 'Black'}),
     html.Div(dcc.DatePickerRange(id='datepicker',min_date_allowed=dates.min(),max_date_allowed=dates.max(),initial_visible_month=dates.min(),end_date=dates.max()),style={'border-color':'black','background-color':'black'}),
-    dcc.Dropdown(id='dropdown2',options=['SDG_Mean','SDG_1', 'SDG_2', 'SDG_3','SDG_4', 'SDG_5', 'SDG_6','SDG_7', 'SDG_8', 'SDG_9','SDG_10', 'SDG_11', 'SDG_12','SDG_13', 'SDG_14', 'SDG_15','SDG_16', 'SDG_17'], multi=True,style={'width':'35vh'}),
+    dcc.Dropdown(id='dropdown2',options=['SDG_Mean','SDG_1', 'SDG_2', 'SDG_3','SDG_4', 'SDG_5', 'SDG_6','SDG_7', 'SDG_8', 'SDG_9','SDG_10', 'SDG_11', 'SDG_12','SDG_13', 'SDG_14', 'SDG_15','SDG_16', 'SDG_17','Adj Close'], multi=True,style={'width':'35vh'}),
     html.Div([
         dcc.Graph(id='stsfig',style={'height': '30%', 'width': '50%','display': 'inline-block','background':'black'}),
         dcc.Graph(id='ltsfig', style={'height': '30%', 'width': '50%','display': 'inline-block','background':'black'}),
